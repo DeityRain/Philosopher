@@ -93,7 +93,6 @@ Example Output
     0 1 is eating
     200 1 is sleeping
     400 1 is thinking
-...
     520 2 died
 
 ---
