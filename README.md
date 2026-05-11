@@ -24,6 +24,7 @@ Your program must be executed as:
 
 ```bash
 ./philo number_of_philosophers time_to_die time_to_eat time_to_sleep [number_of_times_each_philosopher_must_eat]
+```
 
 Parameters
 Argument	Description
@@ -33,22 +34,21 @@ time_to_eat	Time (ms) a philosopher spends eating
 time_to_sleep	Time (ms) a philosopher sleeps
 number_of_times_each_philosopher_must_eat	(optional) Simulation stops when all have eaten this many times
 
+---
+
 How It Works
 Threads
 
 Each philosopher is represented by a thread running its routine:
 
 Take forks
-
 Eat
-
 Sleep
-
 Think
-
 Forks
 
 Forks are implemented as mutexes, one between each philosopher.
+
 Mutexes
 
 Common mutex usage:
@@ -97,6 +97,8 @@ Example Output
 400 1 is thinking
 ...
 520 2 died
+
+---
 
 Makefile
 
