@@ -113,4 +113,4 @@ make re — Rebuild everything
 ## Author
 
 **DeityRain**    
-🧭 [github.com/DeityRain](https://github.com/DeityRain)
+[github.com/DeityRain](https://github.com/DeityRain)
