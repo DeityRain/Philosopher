@@ -41,15 +41,11 @@ Threads
 
 Each philosopher is represented by a thread running its routine:
 
----
-
-Take forks
-Eat
-Sleep
-Think
-Forks
-
----
+    Take forks
+    Eat
+    Sleep
+    Think
+    Forks
 
 Forks are implemented as mutexes, one between each philosopher.
 
@@ -63,12 +59,10 @@ Common mutex usage:
 
     A shared state mutex to detect deaths safely
 
-Timing
-
 Accurate timestamps are crucial.
 All logs follow the format:
 
-[timestamp] [philosopher id] [action]
+    [timestamp] [philosopher id] [action]
 
 Example:
 
@@ -85,34 +79,34 @@ If one dies:
 
 Running Examples
 
-make
-./philo 5 800 200 200
+    make
+    ./philo 5 800 200 200
 
 With eating requirement:
 
-./philo 5 800 200 200 7
+    ./philo 5 800 200 200 7
 
 Example Output
 
-0 1 has taken a fork
-0 1 has taken a fork
-0 1 is eating
-200 1 is sleeping
-400 1 is thinking
+    0 1 has taken a fork
+    0 1 has taken a fork
+    0 1 is eating
+    200 1 is sleeping
+    400 1 is thinking
 ...
-520 2 died
+    520 2 died
 
 ---
 
 Makefile
 
-make — Build program
+    make — Build program
 
-make clean — Remove object files
+    make clean — Remove object files
 
-make fclean — Remove objects + binary
+    make fclean — Remove objects + binary
 
-make re — Rebuild everything
+    make re — Rebuild everything
 
 ---
 
