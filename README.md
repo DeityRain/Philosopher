@@ -41,11 +41,15 @@ Threads
 
 Each philosopher is represented by a thread running its routine:
 
+---
+
 Take forks
 Eat
 Sleep
 Think
 Forks
+
+---
 
 Forks are implemented as mutexes, one between each philosopher.
 
