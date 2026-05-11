@@ -5,7 +5,7 @@ The goal is to simulate the famous **Dining Philosophers Problem** while avoidin
 
 ---
 
-## 🧠 Overview
+## Overview
 
 Each philosopher cycles through three states:
 
@@ -18,7 +18,7 @@ The difficulty lies in coordinating philosophers so the simulation remains accur
 
 ---
 
-## 🛠️ Usage
+## Usage
 
 Your program must be executed as:
 
@@ -33,8 +33,8 @@ time_to_eat	Time (ms) a philosopher spends eating
 time_to_sleep	Time (ms) a philosopher sleeps
 number_of_times_each_philosopher_must_eat	(optional) Simulation stops when all have eaten this many times
 
-⚙️ How It Works
-🧵 Threads
+How It Works
+Threads
 
 Each philosopher is represented by a thread running its routine:
 
@@ -46,10 +46,10 @@ Sleep
 
 Think
 
-🍴 Forks
+Forks
 
 Forks are implemented as mutexes, one between each philosopher.
-🔒 Mutexes
+Mutexes
 
 Common mutex usage:
 
@@ -59,7 +59,7 @@ Common mutex usage:
 
     A shared state mutex to detect deaths safely
 
-⏱️ Timing
+Timing
 
 Accurate timestamps are crucial.
 All logs follow the format:
@@ -70,7 +70,7 @@ Example:
 
 200 3 is eating
 
-💀 Death Detection
+Death Detection
 
 A monitoring system checks if any philosopher exceeds time_to_die without eating.
 If one dies:
@@ -79,7 +79,7 @@ If one dies:
 
     "X died" is printed once
 
-▶️ Running Examples
+Running Examples
 
 make
 ./philo 5 800 200 200
@@ -88,7 +88,7 @@ With eating requirement:
 
 ./philo 5 800 200 200 7
 
-📄 Example Output
+Example Output
 
 0 1 has taken a fork
 0 1 has taken a fork
@@ -98,7 +98,7 @@ With eating requirement:
 ...
 520 2 died
 
-🔧 Makefile
+Makefile
 
 make — Build program
 
@@ -107,3 +107,10 @@ make clean — Remove object files
 make fclean — Remove objects + binary
 
 make re — Rebuild everything
+
+---
+
+## Author
+
+**DeityRain**    
+🧭 [github.com/DeityRain](https://github.com/DeityRain)
